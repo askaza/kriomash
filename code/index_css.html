@@ -1,0 +1,370 @@
+<!doctype html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Криомаш</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="js/jquery-1.10.0.min.js"></script>
+    <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+
+    <!--[if lte IE 8 ]>
+        <link rel="stylesheet" media="screen" href="css/styles_ie.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <script>
+	$(document).ready(function() {
+
+	    $('#slides-list').carouFredSel({
+		auto: true,
+		width: 1260,
+		height: 422,
+		items: 1,
+		scroll: {
+		    items: 1
+		}
+	    });
+
+	    $('#logos-carousel-list').carouFredSel({
+		auto: false,
+		width: 810,
+		height: 80,
+		items: 4,
+		scroll: {
+		    items: 1
+		},
+		prev: {
+		    button: "#carousel-prev",
+		    key: "left"
+		},
+		next: {
+		    button: "#carousel-next",
+		    key: "right"
+		}
+	    });
+	     $('input[type="checkbox"],input[type="radio"], select').styler();
+	})
+    </script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header"> <!-- header -->
+	    <div class="logo"><img src="images/logo.png" alt="Криомаш" title="Криомаш" height="78" width="326" /></div>
+	    <nav class="nav">
+		<ul class="header-nav">
+		    <li class="header-nav__item"><a class="link" href="#">О НАС</a></li>
+		    <li class="header-nav__item"><a class="link" href="#">ОБОРУДОВАНИЕ</a></li>
+		    <li class="header-nav__item"><a class="link" href="#">ПРИМЕНЕНИЕ</a></li>
+		    <li class="header-nav__item"><a class="link" href="#">ИНФОРМАЦИЯ</a></li>
+		    <li class="header-nav__item"><a class="link" href="#">УСЛУГИ</a></li>
+		    <li class="header-nav__item"><a class="link" href="#">КОНТАКТЫ</a></li>
+		</ul>
+	    </nav>
+	    <div class="phone">+7 (495) 641-89-06</div>
+	    <section class="bottom-nav">
+		<ul class="bottom-nav-list">
+		    <li class="bottom-nav-list__item">
+			<div class="site-language">
+			    <a href="#" class="active-lang"><i class="ico ico_lang_ru"></i><i class="arrow"></i></a>
+			    <ul class="language-menu">
+				<li class="language-menu__item"><a href="#"><i class="ico ico_lang_germany"></i></a></li>
+				<li class="language-menu__item"><a href="#"><i class="ico ico_lang_eng"></i></a></li>
+			    </ul>
+			</div>
+		    </li>
+		    <li class="bottom-nav-list__item">
+			<div class="site-search">
+			    <a href="#"><i class="ico ico_search"></i></a>
+			    <form class="form form_search" method="get" action="#" >
+				<fieldset>
+				    <input class="field field_type_text" type="text" />
+				    <input type="submit" class="search-btn" />
+				</fieldset>
+			    </form>
+			</div>
+		    </li>
+		    <li class="bottom-nav-list__item"><a href="#"><i class="ico ico_map"></i></a></li>
+		    <li class="bottom-nav-list__item"><a href="#"><i class="ico ico_mail"></i></a></li>
+		    <li class="bottom-nav-list__item"><a href="#"><i class="ico ico_print"></i></a></li>
+		</ul>
+	    </section>
+        </header>   <!-- / .header -->
+
+	<div class="slider">
+	    <section class="submenu">
+		<hgroup>
+		    <h3 class="submenu__title">Теплообменники </h3>
+		    <h3 class="submenu__title">Турбодетандерные агрегаты</h3>
+		</hgroup>
+		<ul class="submenu-list">
+		    <li class="submenu-list__item"><a class="link" href="#">Низкотемпературная сепарация ПГ (УНТС)</a></li>
+		    <li class="submenu-list__item"><a class="link" href="#">Утилизация и переработка ПНГ</a></li>
+		    <li class="submenu-list__item"><a class="link" href="#">Ожижители ПГ</a></li>
+		    <li class="submenu-list__item"><a class="link" href="#">Детандер-генераторы</a></li>
+		    <li class="submenu-list__item"><a class="link" href="#">Воздухоразделительные установки</a></li>
+		    <li class="submenu-list__item"><a class="link" href="#">Воздушные холодильные машины</a></li>
+		    <li class="submenu-list__item"><a class="link" href="#">Ожижители азота</a></li>
+		    <li class="submenu-list__item"><a class="link" href="#">Ожижители водорода</a></li>
+		</ul>
+	    </section>
+
+
+	    <ul class="slides" id="slides-list">
+		<li class="slide">
+		    <img class="slide__image" src="images/content/slide1.jpg" alt="" title="" />
+		    <h2 class="slide__title">Расчет и проектирование</h2>
+		    <a class="btn btn_order" href="#">Заказать оборудование</a>
+		</li>
+		<li class="slide">
+		    <img class="slide__image" src="images/content/slide2.jpg" alt="" title="" />
+		    <h2 class="slide__title">Проектирование</h2>
+		    <a class="btn btn_order" href="#">Заказать оборудование</a>
+		</li>
+	    </ul>
+	</div>
+	<nav class="breadcrumbs">
+	    <ul class="breadcrumbs-list">
+		<li class="breadcrumbs-list__item"><a href="#" class="link">Главная</a></li>
+		<li class="breadcrumbs-list__item"><a href="#" class="link">Раздел</a></li>
+		<li class="breadcrumbs-list__item">Подраздел</li>
+	    </ul>
+	</nav>
+
+
+        <div class="main">
+	    <div class="columns">
+		<aside class="column-left">
+		    <div class="aside-block">
+			<section class="submenu">
+			    <hgroup>
+				<h3 class="submenu__title">Теплообменники </h3>
+				<h3 class="submenu__title">Турбодетандерные агрегаты</h3>
+			    </hgroup>
+			    <ul class="submenu-list">
+				<li class="submenu-list__item"><a class="link" href="#">Низкотемпературная сепарация ПГ (УНТС)</a></li>
+				<li class="submenu-list__item"><a class="link" href="#">Утилизация и переработка ПНГ</a></li>
+				<li class="submenu-list__item"><a class="link" href="#">Ожижители ПГ</a></li>
+				<li class="submenu-list__item"><a class="link" href="#">Детандер-генераторы</a></li>
+				<li class="submenu-list__item"><a class="link" href="#">Воздухоразделительные установки</a></li>
+				<li class="submenu-list__item"><a class="link" href="#">Воздушные холодильные машины</a></li>
+				<li class="submenu-list__item"><a class="link" href="#">Ожижители азота</a></li>
+				<li class="submenu-list__item"><a class="link" href="#">Ожижители водорода</a></li>
+			    </ul>
+			</section>
+		    </div>
+
+		    <div class="aside-block">
+			<img src="images/content/1.jpg" alt="" title="" />
+			<img src="images/content/2.jpg" alt="" title="" />
+			<img src="images/content/3.jpg" alt="" title="" />
+		    </div>
+		</aside>
+		<div class="column-content">
+		    <h1 class="page-title">Емкостное оборудование</h1>
+
+		    <article class="article-text">
+			<p>Карма придумана для того чтобы отсеять интересную и полезную информацию от неинтересной.
+			    Чем выше карма, тем больше у пользователя возможностей итем выше он в рейтинге дадалюдей.</p>
+			<img src="images/content/3.jpg" width="200" align="left" />
+<p>Если топики и комментарии пользователя интересны, то его карма растет, если они глупые и содержат нецензурную
+    лексику, его карма падает в минус. Чем выше карма, тем больше возможностей у человека. Если у человека высокая
+    карма, то это значит он написал толковые, интересные статьи, принимает активное участие и пользуется доверием
+    среди участников сообщества. Карма повышается, если вашу статью или комментарий плюсуют, если минусуют то значит ваша карма
+падает. Со временем волшебство вычисления кармы усложняется и становится и карма становится ещё более достоверным.
+Карма придумана для того чтобы отсеять интересную и полезную информацию от неинтересной. Чем выше карма, тем больше
+у пользователя возможностей и тем выше он в рейтинге индадалюдей.</p>
+
+<h2>Заголовок 2</h2>
+<h3>Заголовок 3</h3>
+<h4>Заголовок 4</h4>
+<h5>Заголовок 5</h5>
+<h6>Заголовок 6</h6>
+<p>Со временем волшебство вычисления кармы усложняется и становится и карма становится ещё более достоверным.
+Карма придумана для того чтобы отсеять интересную и полезную информацию от неинтересной. Чем выше карма, тем больше
+у пользователя возможностей и тем выше он в рейтинге индадалюдей.</p>
+
+<ul>
+    <li>Карма придумана для того чтобы отсеять интересную и полезную информацию</li>
+    <li>Чем выше карма, тем больше у пользователя возможностей</li>
+    <li>Карма придумана</li>
+</ul>
+<p>Со временем волшебство вычисления кармы усложняется и становится и карма становится ещё более достоверным.
+Карма придумана для того чтобы отсеять интересную и полезную информацию от неинтересной. Чем выше карма, тем больше
+у пользователя возможностей и тем выше он в рейтинге индадалюдей.</p>
+<ol>
+    <li>Карма придумана для того чтобы отсеять интересную и полезную информацию</li>
+    <li>Чем выше карма, тем больше у пользователя возможностей</li>
+    <li>Карма придумана</li>
+</ol>
+
+<h2>таблица</h2>
+<table>
+    <thead>
+	<tr>
+	    <th>Заголовок1</th>
+	    <th>Заголовок2</th>
+	    <th>Заголовок3</th>
+	</tr>
+    </thead>
+     <tbody>
+	<tr>
+	    <td>Текст в поле</td>
+	    <td>Значение поля</td>
+	    <td>Информация</td>
+	</tr>
+	<tr>
+	    <td>Текст в поле</td>
+	    <td>Значение поля</td>
+	    <td>Информация</td>
+	</tr>
+	<tr>
+	    <td>Текст в поле</td>
+	    <td>Значение поля</td>
+	    <td>Информация</td>
+	</tr>
+	<tr>
+	    <td>Текст в поле</td>
+	    <td>Значение поля</td>
+	    <td>Информация</td>
+	</tr>
+	<tr>
+	    <td>Текст в поле</td>
+	    <td>Значение поля</td>
+	    <td>Информация</td>
+	</tr>
+	<tr>
+	    <td>Текст в поле</td>
+	    <td>Значение поля</td>
+	    <td>Информация</td>
+	</tr>
+    </tbody>
+</table>
+<h2>форма</h2>
+</article>
+<form class="standard-form" action="#" method="get">
+    <ul class="fields-list">
+	<li>
+	    <label>Ваше имя</label>
+	    <input type="text" name="Name"/>
+	</li>
+	<li>
+	    <label>Адрес электронной почты</label>
+	    <input type="text" name="Email"/>
+	</li>
+	<li>
+	    <label>Ваша должность</label>
+	    <select>
+		<option>Менеджер среднего звена</option>
+		<option>Менеджер</option>
+	    </select>
+	</li>
+	<li>
+	    <label>Ваша должность</label>
+	    <textarea></textarea>
+	</li>
+	<li>
+
+	    <label>
+		<input type="checkbox" id="Chbox1"/>
+		Тут лейбл к чекбоксу
+	    </label>
+	</li>
+	<li>
+
+	    <label>
+		<input type="radio" id="Radio1"/>
+		Радиобаттон
+	    </label>
+	</li>
+	<li>
+	    <input type="submit" value="Отправить"/>
+	</li>
+	<li>
+	    <input type="button" disabled="disabled" value="Отправить"/>
+	</li>
+
+    </ul>
+</form>
+
+
+
+
+
+
+
+
+
+		</div>
+
+	    </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+
+	<section class="bottom-nav">
+	    <ul class="bottom-nav-list">
+		<li class="bottom-nav-list__item">
+		    <div class="site-language">
+			<a href="#" class="active-lang"><i class="ico ico_lang_ru"></i><i class="arrow"></i></a>
+			<ul class="language-menu">
+			    <li class="language-menu__item"><a href="#"><i class="ico ico_lang_germany"></i></a></li>
+			    <li class="language-menu__item"><a href="#"><i class="ico ico_lang_eng"></i></a></li>
+			</ul>
+		    </div>
+		</li>
+		<li class="bottom-nav-list__item">
+		    <div class="site-search">
+			<a href="#"><i class="ico ico_search"></i></a>
+			<form class="form form_search" method="get" action="#" >
+			    <fieldset>
+				<input class="field field_type_text" type="text" />
+				<input type="submit" class="search-btn" />
+			    </fieldset>
+			</form>
+		    </div>
+		</li>
+		<li class="bottom-nav-list__item"><a href="#"><i class="ico ico_map"></i></a></li>
+		<li class="bottom-nav-list__item"><a href="#"><i class="ico ico_mail"></i></a></li>
+		<li class="bottom-nav-list__item"><a href="#"><i class="ico ico_print"></i></a></li>
+	    </ul>
+	</section>
+
+	<div class="copyright">
+	    2013&copy; Cryomash  <a  href="mailto:info@cryomash.com">info@cryomash.com</a>
+	</div>
+
+	<div class="address">
+	    <p> 119049, г. Москва, Ленинский просп., 4, стр. 1а</p>
+	    <p>телефон: +7 (495) 641-89-06</p>
+	</div>
+
+	<ul class="social">
+	    <li class="social__item"><a href="#"><i class="ico ico_social ico_google"></i></a></li>
+	    <li class="social__item"><a href="#"><i class="ico ico_social ico_ya"></i></a></li>
+	    <li class="social__item"><a href="#"><i class="ico ico_social ico_vk"></i></a></li>
+	    <li class="social__item"><a href="#"><i class="ico ico_social ico_fb"></i></a></li>
+	    <li class="social__item"><a href="#"><i class="ico ico_social ico_lj"></i></a></li>
+	    <li class="social__item"><a href="#"><i class="ico ico_social ico_tw"></i></a></li>
+	</ul>
+
+
+
+
+    </footer>
+
+</body>
+</html>

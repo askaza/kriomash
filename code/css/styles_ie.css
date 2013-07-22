@@ -1,0 +1,28 @@
+/* display:inline-block > */
+input {
+  overflow: visible;
+}
+
+
+.btn,
+.pages-list,
+.pages-list__item {
+  *display: inline;
+  *zoom: 1;
+}
+/* display:inline-block < */
+
+
+/* clearing > */
+.clearfix,
+section,
+.header-nav,
+.columns,
+.bottom-nav-list,
+.form-fields__item,
+.language-menu,
+article,
+.page-footer {
+  *zoom: 1;
+}
+/* clearing < */
