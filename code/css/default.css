@@ -137,19 +137,19 @@ a:hover {
     }
 
     .article-text p {
-	margin-bottom: 15px;
+	margin-bottom: 25px;
     }
 
 	.article-text ul,
 	.article-text ol {
-		margin:0 0 15px 0;
+		margin:0 0 30px 15px;
 	}
 	.article-text ul {
 		list-style:none;
 	}
 	.article-text ul li {
 	    padding: 0;
-	    margin: 0 0 15px 0;
+	    margin: 0 0 7px 0;
 	    position: relative;
 	}
 	.article-text ul li:before {
@@ -164,9 +164,10 @@ a:hover {
 
 	.article-text ol {
 		list-style:decimal;
+                margin-left: 0;
 	}
 	.article-text img {
-		margin:10px 10px 10px 0;
+		margin:6px 10px 10px 0;
 	}
 
 	article img {
@@ -178,13 +179,12 @@ a:hover {
 	article ol {
 	    list-style: none;
 	    counter-reset: point;
-
 	}
 
 	article ol li {
 	    list-style: none;
-	    margin-bottom: 15px;
-	    padding-left: 23px;
+	    margin-bottom: 7px;
+	    padding-left: 15px;
 	    position: relative;
 
 	}
@@ -200,7 +200,7 @@ article ol li:before {
     padding: 3px 0;
     color:#43deff;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 
 }
 article table {
@@ -262,6 +262,11 @@ textarea {
     position: relative;
     width: 460px;
 }
+.jq-selectbox__select-text {
+    overflow: hidden;
+    cursor: pointer;
+    width: 440px;
+}
 .jq-selectbox__trigger {
     position: absolute;
     right: 0;
@@ -278,16 +283,65 @@ textarea {
     border:1px solid #dddddd;
     background: #fff;
     position: absolute;
+    width: 476px;
     z-index: 10;
 }
 .jq-selectbox__dropdown li {
-    margin: 0;padding: 0 8px;
+    margin: 0;padding: 3px 8px;
+    cursor: pointer;
 }
-li:hover {
-    color: #289FF4;
+.jq-selectbox__dropdown li:hover {
+    color: #289FF4; 
 }
 .jq-checkbox {
   display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+  margin-right: 4px;
+}
+.jq-checkbox span {
+    background: url(../images/bg/form.png) no-repeat 0 -16px;
+     display: inline-block;
+     height: 13px;
+     width: 13px;
+}
+.jq-checkbox.checked span {
+    background: url(../images/bg/form.png) no-repeat -15px -16px ;
+}
+.jq-radio {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+  margin-right: 4px;
+}
+
+.jq-radio span {
+    background: url(../images/bg/form.png) no-repeat 0 0;
+     display: inline-block;
+     height: 15px;
+     width: 15px;
+}
+.jq-radio.checked span {
+    background: url(../images/bg/form.png) no-repeat -17px 0;
+}
+
+
+input[type="submit"], 
+input[type="button"] {
+    height: 25px;
+    background: url(../images/bg/btn.png) repeat-x;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 13px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+input[disabled="disabled"] {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+ filter: alpha(opacity=85);
+  opacity: 0.85;
+  cursor: default;
 }
 /* clearing > */
 .clearfix:after,

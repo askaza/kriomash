@@ -18,7 +18,7 @@ body {
     padding-bottom: 120px;
 }
 .columns {
-    padding: 60px 30px 0;
+    padding: 58px 30px 0;
 }
 .column-content {
     float: left;
@@ -148,7 +148,7 @@ body {
     margin-top: 2px;
 }
 hgroup {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 .page-footer {
     padding: 12px 0;
@@ -254,8 +254,8 @@ textarea {
     font-family: 'roboto_condensedregular';
     color:#49769f;
     font-size: 40px;
-    top:15px;
-    right:0;
+    top:30px;
+    right:30px;
 }
 
 .header {
@@ -283,9 +283,9 @@ textarea {
   font-family: 'roboto_condensedregular';
   text-decoration: none;
   font-size: 18px;
-  padding: 0 20px;
+  padding: 0 27px;
   display: block;
-  line-height: 52px;
+  line-height: 51px;
 }
 .header-nav__item:first-child {
     border-radius: 10px 0 0 10px;
@@ -301,8 +301,8 @@ textarea {
 }
 .header .bottom-nav {
     position: absolute;
-    right: 0;
-    top:110px;
+    right: 10px;
+    top:118px;
 }
 .header .bottom-nav .arrow {
     background-position: -229px 0;
@@ -491,7 +491,7 @@ textarea {
   color: #fff;
   font-size: 46px;
   line-height: 50px;
-  padding: 15px 30px 18px;
+  padding: 21px 30px 22px;
   position: absolute;
   top:0;
   left:0;
@@ -540,10 +540,10 @@ textarea {
     background: url(../images/bg/slider-menu-bg.png) no-repeat 0 0;
     width: 344px;
     height: 378px;
-    right:15px;
-    top:-9px;
+    right:-12px;
+    top:-8px;
     position: absolute;
-    padding: 20px 30px;
+    padding: 30px 30px 10px;
     z-index: 2;
 }
 .submenu__title {
@@ -552,13 +552,13 @@ textarea {
     color: #49769f;
     font-size:22px;
     line-height: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 .slider .submenu__title {
     color: #bee3ff;
 }
 .submenu-list__item {
-    padding: 0 0 10px 18px;
+    padding: 0 0 8px 18px;
     position: relative;
 }
 .submenu-list__item:after {
@@ -596,7 +596,7 @@ textarea {
 .breadcrumbs-list__item {
     display: inline;
     font-size: 14px;
-    margin-right: 20px;
+    margin-right: 15px;
     color:#888888;
 }
 .breadcrumbs-list__item .link {
@@ -606,7 +606,7 @@ textarea {
     background: url(../images/bg/icons.png) no-repeat -211px 0;
     content:"";
     height: 11px;
-    margin-left: 10px;
+    margin-left: 7px;
     position: absolute;
     top: 4px;
     width: 6px;
@@ -619,6 +619,7 @@ textarea {
 .clients {
     margin-top: 60px;
     margin-bottom: 60px;
+    overflow: hidden;
 }
 
 .clients__title {
@@ -633,9 +634,13 @@ textarea {
     border-style: solid;
     border-width: 1px 0;
     margin-top: -15px;
-    padding: 15px 0;
+    padding: 23px 0;
     position: relative;
      z-index: 1;
+}
+.logos-carousel .caroufredsel_wrapper {
+    min-width: 750px;
+    margin: 0 auto !important;
 }
 .logos-list {
     left:0;
@@ -697,10 +702,10 @@ textarea {
 /* aside < */
 
 .aside-block {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .aside-block img {
-    margin-top: 25px;
+    margin-top: 30px;
     display: block;
     max-width: 360px;
     height: auto;
@@ -710,6 +715,9 @@ textarea {
 }
 .aside-block .submenu hgroup {
     margin-top: -8px;
+}
+.aside-block.news {
+    margin:30px 0;
 }
 
 
@@ -737,15 +745,15 @@ textarea {
 /* inner pages < */
 
 .page-title {
+    border-bottom: 1px dotted #4C4C4C;
+    color: #49769F;
     font-family: 'roboto_condensedregular';
-    border-bottom: 1px dotted #4c4c4c;
-    color:#49769f;
     font-size: 38px;
     line-height: 40px;
+    margin-bottom: 23px;
+    margin-top: -7px;
+    padding-bottom: 24px;
     text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    margin-top:-7px;
 }
 
 .articles-list__item {
@@ -812,3 +820,10 @@ textarea {
 
 }
 /* pagination < */
+
+.company-info p {
+    margin-bottom: 15px;
+}
+.company-info ul li {
+    margin-bottom: 13px;
+}

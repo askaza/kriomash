@@ -32,15 +32,20 @@
 		height: 422,
 		items: 1,
 		scroll: {
-		    items: 1
+		    items: 1, 
+                    fx:'fade', 
+                    duration:1200
 		}
 	    });
 
 	    $('#logos-carousel-list').carouFredSel({
 		auto: false,
-		width: 810,
+		width: "variable",
 		height: 80,
-		items: 4,
+		items: {
+                    visible:4,
+                    width:"variable"
+                },
 		scroll: {
 		    items: 1
 		},
